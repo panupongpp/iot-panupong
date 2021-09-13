@@ -3,33 +3,91 @@
     <html lang="en">
         <head>
             <title>Resume by Panupong</title>
+            <script src="pond.js"></script>
         </head>
         <script>
-                alert("welcome to Resume");
-                alert("by Panupong");
+             //   alert(`Hello, ${name}!`)
+             //   alert("welcome to Resume");
+             //   alert("by Panupong");
         </script>
         <style>
-            .ex1 {
-                background-color:rgb(35, 39, 49);
-                text-align: center;
-                color: floralwhite;
-                padding: 37px;
-
+            html, body{
+                background-color: lightgray;
+                margin: 0;
+                padding: 0;
             }
-            .body{
-                background-color:rgb(35, 39, 49);
-                font-size: 20px;
+            .box{
+                background-color: white;
+                margin: 20px;
+                padding: 30px;
+                text-align: center;
+            }
+            .image{
+                width: 50%;
+            }
+            .top-header{
+                background-color: rgb(54, 53, 53);
+            }
+            .menu{
+                color: white;
+                padding: 15px;
+                display: inline-block;
+                text-decoration: none;
+            }
+            .footer{
+                background-color: lightslategray;
+                padding: 20px;
+                text-align: center;
+            }
+            .main{
+                max-width: 700px;
+                margin: auto;
+            }
+            .Personal{
+                text-align: left;
+               display:inline-block;
+            }
+            .pond{
+                text-align:left;
             }
         </style>
         <body>
-            <h1 class="ex1"> 
-                Resume 
-            </h1>
-            <h1 class="body">
-                <p>
-                    panupong
-                </p>
-                <image src ="C:\Users\panupongg\Downloads\Panupong.jpg" height = 400px*500px alt="Panupong"></image>
-            </h1>
+            <header class="top-header">
+                <h1 class="menu">Portfolio</h1>
+                <a class="menu" href="https://facebook.com">Facebook</a>
+                <a class="menu" href="https://instagram.com/">Instagram</a>
+                <a class="menu" href="https://twitter.com/">Twitter</a>
+                <a class="menu" href="https://Gmail.com/">Gmail</a>
+            </header>
+            <div class="main">
+                <div class="box" >
+                    <image class="image" src="Panupong.jpg" >
+                    <h1>Personal record</h1>
+                    <div class="pond">
+                        <h3 class="Personal">My Name : </h3> 
+                        <dt class="Personal">Panupong Tualamun</dt>
+                    </div>
+                    <div class="pond">
+                        <h3 class="Personal">My nickname : </h3> 
+                        <dt class="Personal">Pond</dt>
+                    </div>
+                    <div class="pond">
+                        <h3 class="Personal">Age : </h3> 
+                        <dt class="Personal">23</dt>
+                    </div>
+                    <div class="pond">
+                        <h3 class="Personal">Mobile : </h3> 
+                        <dt class="Personal">091-8588740</dt>
+                    </div>
+                </div>
+                <div class="box" >
+                    <h1>Education</h1>
+                    
+                </div>
+            </div>
+            <footer class="footer">
+                <P>By Panupong Tualamun</P>
+                <p>ID 6201072516214</p>
+            </footer>
         </body>
     </html>
