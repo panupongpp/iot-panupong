@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-    <meta name="viewport" content="width = device-width,initial-scale=1.0">
     <html lang="en">
         <head>
+            <meta name="viewport" content="width = device-width,initial-scale=1.0">
             <title>Resume by Panupong</title>
             <script src="java.js"></script>
         </head>
         <script>
-             //   alert(`Hello, ${name}!`)
-             //   alert("welcome to Resume");
-             //   alert("by Panupong");
+                //alert(`Hello, ${name}!`)
+               // alert("welcome to Resume");
+               // alert("by Panupong");
         </script>
         <style>
             html, body{
@@ -24,6 +24,12 @@
             }
             .image{
                 width: 50%;
+            }
+            .image1{
+                width: 70px;
+                margin-left: 20px;
+                display: inline-block;
+                text-decoration: none;
             }
             .top-header{
                 background-color: rgb(54, 53, 53);
@@ -60,6 +66,7 @@
                 <a class="menu" href="https://instagram.com/">Instagram</a>
                 <a class="menu" href="https://twitter.com/">Twitter</a>
                 <a class="menu" href="https://Gmail.com/">Gmail</a>
+                <a class="image1" href="https://iee.eng.kmutnb.ac.th/"><image class="image1" src="IEE.png" ></a>
             </header>
             <div class="main">
                 <div class="box" >
@@ -86,7 +93,7 @@
                     <h1>Education</h1>
                     <div class="pond">
                         <h3 class="Personal">University </h3> 
-                        <p> KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+                        <p> King Mngkut's Universito of Technology North Bangkok</p>
                         <p>Faculty of Engineering</p>
                         <p>Instrumentation and Electronics Engineering</p>
                         <p >2019 - current</p> 
@@ -97,7 +104,31 @@
                     </div>
                 </div>
                 <div class="box">
-                    
+                    <h1>Skills</h1>
+                    <div class="pond">
+                        <p id="message"></p>
+                        <p id="message1"></p>
+                        <p id="message2"></p>
+                        <p id="message3"></p>
+                    </div>
+                    <button id ="button"> กดดู</button>
+                    <script src="showmessage.js"></script>    
+                </div>
+                <div class="box">
+                    <h1 id="show">Hello!</h1>
+                     <button onclick="hello()">Click Here</button>
+                     <script src="show.js"></script>
+                </div>
+                <div class="box">
+                    <div class="pond">
+                    <h1>Tasks</h1>
+                    <ul id="tasks">
+                    </ul>
+                    <form >
+                        <input id="task" type="text" placeholder="New Task">
+                        <input id="submit" type="submit">
+                    </form>
+                    </div>
                 </div>
             </div>
             <footer class="footer">
