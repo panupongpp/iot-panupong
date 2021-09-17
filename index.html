@@ -6,13 +6,13 @@
             <script src="java.js"></script>
         </head>
         <script>
-                //alert(`Hello, ${name}!`)
+               // alert(`Hello, ${name}!`)
                // alert("welcome to Resume");
                // alert("by Panupong");
         </script>
         <style>
             html, body{
-                background-color: lightgray;
+                background-color: rgb(112, 110, 110);
                 margin: 0;
                 padding: 0;
             }
@@ -21,9 +21,11 @@
                 margin: 20px;
                 padding: 30px;
                 text-align: center;
+                border-radius: 50px;
             }
             .image{
                 width: 50%;
+                border-radius: 50%;
             }
             .image1{
                 width: 70px;
@@ -33,6 +35,7 @@
             }
             .top-header{
                 background-color: rgb(54, 53, 53);
+                font-family: Arial, Helvetica, sans-serif;
             }
             .menu{
                 color: white;
@@ -44,10 +47,12 @@
                 background-color: lightslategray;
                 padding: 20px;
                 text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
             }
             .main{
                 max-width: 700px;
                 margin: auto;
+                font-family: Arial, Helvetica, sans-serif;
             }
             .Personal{
                display:inline-block;
@@ -57,6 +62,33 @@
             }
             .right{
                 text-align:right;
+            }
+            .zxc {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .mainbox{
+                width: 360px;
+                margin: 32px auto;
+                height: 500px;
+                box-shadow: 3px 3px 10px;
+                border-radius: 50px;
+                overflow: hidden;
+            }
+            .imge2{
+                height: 250px;
+                background: brown;
+                width: 100%;
+                overflow:hidden ;
+            }
+            .content{
+                text-align: center;
+                border-bottom: 2px solid #e5e5e5;
+                height: 180px;
+            }
+            .footer1{
+                text-align:center;
             }
         </style>
         <body>
@@ -71,13 +103,13 @@
             <div class="main">
                 <div class="box" >
                     <image class="image" src="pond.jpg" >
-                    <h1>Personal record</h1>
+                    <h1>Personal Information</h1>
                     <div class="pond">
                         <h3 class="Personal">My Name : </h3> 
                         <dt class="Personal">Panupong Tualamun</dt>
                     </div>
                     <div class="pond">
-                        <h3 class="Personal">My nickname : </h3> 
+                        <h3 class="Personal">My Nickname : </h3> 
                         <dt class="Personal">Pond</dt>
                     </div>
                     <div class="pond">
@@ -91,16 +123,37 @@
                 </div>
                 <div class="box" >
                     <h1>Education</h1>
-                    <div class="pond">
-                        <h3 class="Personal">University </h3> 
-                        <p> King Mngkut's Universito of Technology North Bangkok</p>
-                        <p>Faculty of Engineering</p>
-                        <p>Instrumentation and Electronics Engineering</p>
-                        <p >2019 - current</p> 
+                    <div class="zxc">
+                        <div class="mainbox">
+                             <div class="imge2">
+                                <a href="https://www.kmutnb.ac.th/"><img src="KMUTNB.jpg" alt="KMUTNB"></a>
+                            </div>
+                             <div class="content">
+                                 <h2>University</h2>
+                                 <h4>King Mngkut's University of Technology North Bangkok</h4>
+                                <p>Faculty of Engineering</p>
+                                <p>Instrumentation and Electronics Engineering</p>
+                            </div>
+                             <div class="footer1">
+                                <p>2019 - current</p>
+                            </div>
+                         </div>
                     </div>
-                    <div class="pond">
-                        <h3 class="Personal">High Vocational Certificate </h3> 
-                        <P>Lampang Technical College</P>
+                    <div class="zxc">
+                        <div class="mainbox">
+                             <div class="imge2">
+                                <a href="http://www.lampangtc.ac.th/2021/"><img src="Technical.jpg" alt="Technical"></a>
+                                <img src="Technical.jpg" alt="Technical">
+                            </div>
+                             <div class="content">
+                                 <h2>High Vocational Certificate</h2>
+                                 <h4>Lampang Technical College</h4>
+                                 <p>Mechatronics</p>
+                            </div>
+                             <div class="footer1">
+                                <p>2016 - 2018</p>
+                            </div>
+                         </div>
                     </div>
                 </div>
                 <div class="box">
@@ -111,23 +164,34 @@
                         <p id="message2"></p>
                         <p id="message3"></p>
                     </div>
-                    <button id ="button"> กดดู</button>
+                    <button id ="button">กดดู</button>
                     <script src="showmessage.js"></script>    
                 </div>
                 <div class="box">
-                    <h1 id="show">Hello!</h1>
-                     <button onclick="hello()">Click Here</button>
-                     <script src="show.js"></script>
+                    <h1>Hobbies</h1>
+                    <div class="pond">
+                        <p id="show">1.Music</p>
+                    </div>
+                    <button onclick="Hobbies()">Click Here</button>
+                    <script src="show.js"></script>
                 </div>
                 <div class="box">
+                    <h1>OK</h1>
                     <div class="pond">
+                        <h6 id="arry">1</h6>
+                        <p id="arrycounter">KO</p>
+                    </div>
+                    <button onclick="count123()">Click Here</button>
+                    <script src="arryandcounter.js"></script>
+                </div>
+                <div class="box">
                     <h1>Tasks</h1>
-                    <ul id="tasks">
-                    </ul>
-                    <form >
-                        <input id="task" type="text" placeholder="New Task">
-                        <input id="submit" type="submit">
-                    </form>
+                     <div class="pond">
+                        <ul id="tasks"> </ul>
+                        <form >
+                            <input id="task" type="text" placeholder="New Task">
+                            <input id="submit" type="submit">
+                        </form>
                     </div>
                 </div>
             </div>
