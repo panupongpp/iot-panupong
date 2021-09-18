@@ -1,4 +1,3 @@
-//let dicountButton1= document.getElementById('show');
 function Hobbies (){
     if(show.innerHTML === '1.Music'){
         show.innerHTML = '2.Exercise';
@@ -16,4 +15,3 @@ function Hobbies (){
         show.innerHTML = '1.Music';
     }
 }
-//dicountButton1.addEventListener('click', hello);
