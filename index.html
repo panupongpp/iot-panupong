@@ -69,7 +69,7 @@
                 box-sizing: border-box;
             }
             .mainbox{
-                width: 360px;
+                width: 60%;
                 margin: 32px auto;
                 height: 500px;
                 box-shadow: 3px 3px 10px;
@@ -89,6 +89,22 @@
             }
             .footer1{
                 text-align:center;
+            }
+            button,select{
+                padding: 10px 20px;
+                font-size: 15px;
+                cursor: pointer;
+                border: 0px;
+                background: transparent;
+                position: relative;
+                margin: 10px;
+               
+            }
+            .btn{
+                background: black;
+                color:blanchedalmond;
+                border-radius: 10px;
+               
             }
         </style>
         <body>
@@ -164,33 +180,40 @@
                         <p id="message2"></p>
                         <p id="message3"></p>
                     </div>
-                    <button id ="button">กดดู</button>
+                    <button class="btn" id ="button">กดดู</button>
                     <script src="showmessage.js"></script>    
                 </div>
                 <div class="box">
                     <h1>Hobbies</h1>
                     <div class="pond">
-                        <p id="show">1.Music</p>
+                        <h3 id="show">1.Music</h3>
                     </div>
-                    <button onclick="Hobbies()">Click Here</button>
+                    <button class="btn" onclick="Hobbies()">Click Here</button>
                     <script src="show.js"></script>
                 </div>
                 <div class="box">
-                    <h1>OK</h1>
+                    <h1>Sport</h1>
                     <div class="pond">
-                        <h6 id="arry">1</h6>
-                        <p id="arrycounter">KO</p>
+                        <h3 class="Personal" id="arry">1</h3>
+                        <h3 class="Personal" id="arry">.</h3>
+                        <dt class="Personal" id="arrycounter">basketball</dt>
                     </div>
-                    <button onclick="count123()">Click Here</button>
+                    <button class="btn" onclick="count123()">Click Here</button>
                     <script src="arryandcounter.js"></script>
+                    <select>
+                        <option class="btn" value="black">Black</option>
+                        <option class="btn" value="red">Red</option>
+                        <option class="btn" value="green">Green</option>
+                        <option class="btn" value="blue">Blue</option>
+                    </select>
                 </div>
                 <div class="box">
-                    <h1>Tasks</h1>
+                    <h1>Comment</h1>
                      <div class="pond">
                         <ul id="tasks"> </ul>
                         <form >
                             <input id="task" type="text" placeholder="New Task">
-                            <input id="submit" type="submit">
+                            <button class="btn" id="submit" type="submit">send</button>
                         </form>
                     </div>
                 </div>
@@ -198,6 +221,10 @@
             <footer class="footer">
                 <P>By Panupong Tualamun</P>
                 <p>ID 6201072516214</p>
+                <dt class="Personal" id="time2">0</dt>
+                <dt class="Personal">/</dt>
+                <dt class="Personal" id="time1">0</dt>
+                <script src="time.js"></script>
             </footer>
         </body>
     </html>
