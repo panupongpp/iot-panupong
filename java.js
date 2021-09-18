@@ -1,6 +1,6 @@
 //let name =prompt("What your name")
 document.addEventListener('DOMContentLoaded',() => {
-    const submit = document.querySelector('#submit');
+   const submit = document.querySelector('#submit');
     submit.disabled = true;
     document.querySelector('#task').onkeyup = function (){
         if(document.querySelector('#task').value.length > 0 ){
@@ -19,4 +19,11 @@ document.addEventListener('DOMContentLoaded',() => {
         submit.disabled=true;
         return false;
     }
-});
+    });
+
+    function task(){
+        let task = localStorage.getItem('task');
+        document.getElementById('task').innerHTML = task;
+        localStorage.setItem('task', task);
+    }
+
