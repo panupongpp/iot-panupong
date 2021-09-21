@@ -20,10 +20,3 @@ document.addEventListener('DOMContentLoaded',() => {
         return false;
     }
     });
-
-    function task(){
-        let task = localStorage.getItem('task');
-        document.getElementById('task').innerHTML = task;
-        localStorage.setItem('task', task);
-    }
-
