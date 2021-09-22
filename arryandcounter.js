@@ -14,5 +14,6 @@ document.addEventListener('DOMContentLoaded',() => {
     document.querySelector('select').onchange = function() {
         document.getElementById('arrycounter').style.color= this.value
         document.getElementById('arry').style.color= this.value
+        document.querySelector('select').style.background= this.value
     }
 });
