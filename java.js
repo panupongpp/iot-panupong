@@ -1,4 +1,4 @@
-//let name =prompt("What your name")
+let name =prompt("What your name")
 document.addEventListener('DOMContentLoaded',() => {
    const submit = document.querySelector('#submit');
     submit.disabled = true;
